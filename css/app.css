@@ -1,0 +1,84 @@
+/*Global
+------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {margin: 0px;}
+
+.container {
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Navigation
+-------------------------------------------*/
+
+.sub-nav {
+	margin: 0px; 
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+.sub-nav ul {
+	margin: 0px;
+	list-style: none;
+	text-transform: lowercase;
+}
+
+.top-bar {
+	margin-top: 60px;
+	background: none;
+}
+.top-bar-section ul li {
+	padding-right: 10px;
+	background: none;
+}
+.top-bar-section ul li > a {
+	text-transform: lowercase;
+	color: #fff;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: #ab0534;
+	line-height: 1.813rem;
+}
+.top-bar-section li:not(.has-form) a:hover:not(.button) {
+	background: #666;
+}
+
+.logo {
+	margin-top: 30px;
+	margin-left: 80px;
+}
+
+.company-name {
+	font-size: 32px;
+}
+
+/*Blocks
+----------------------------------------------*/
+.block, .banner {text-align: center;}
+
+.block h2 {text-transform: uppercase;}
+.block h4{text-transform: lowercase;}
+.block img {width: 5%; max-width: 55px;}
+
+.banner {
+	margin-top: 15px;
+	padding: 15px 0px;
+	background: #ab0534;
+}
+.banner p {color: #fff;}
+
+
+.block-contact {padding: 60px 0px;}
+.block-contact:hover {background: #666;}
+
+.block-contact:hover h2, .block-contact:hover h4 {color: #fff;}
+
+/*Footer
+---------------------------------------------*/
+.social ul li {display: inline-block;}
+
+#footer-nav .top-bar {margin-top: 9px;}
+.bottom-bar {border-top: 2px solid #ab0534;}
+
+
+
