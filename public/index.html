@@ -17,22 +17,27 @@
           <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- Script -->
         <script src="js/vendor/modernizr.js"></script>
+
+   <!--Angular libraries-->
+        <script src="js/angular/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+
     <!-- SEO -->
         <meta name="description" itemprop="description" content="Ashmore Construction has been providing Tenant Improvement and Renovation construction services to the Southern California, Los Angeles &amp; Inland Empire commercial and industrial real estate markets">  
         <meta name="keywords" itemprop="keywords" content="construction, ashmore, ashmore construction, commercial, industrial, rennovation,">
         <link rel="canonical" href="http://mixxyoga.com/">
   </head>
-  <body>
+  <body ng-app="constructionApp">
     <div class="container">
       <div class="sub-nav">
         <ul class="right">
-            <li><a href ="/careers.html"></a>Careers</li>
+            <li><a href ="/public/careers.htmlrs.html"></a>Careers</li>
             <li><a href ="/subcontracts.html"></a>Subcontracts</li>
         </ul>
       </div>
 
       <div class="logo">
-        <!-- <img id="ashmore-logo" src= "img/ashmore-logo.jpg" alt="ashmore construction logo">  --> 
+        <!-- <img id="ashmore-logo" src= "img/ashmore-logo.jpg" alt="ashmore construction logo">  -->
         <h1 class="company-name"><strong>ASHMORE</strong> CONSTRUCTION</h1>
       </div>
 
@@ -45,48 +50,16 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
-            <li> <a href ="/services.html">Services</a></li>
-            <li> <a href ="/projects.html">Projects</a></li>
-            <li> <a href ="/story.html">Our Story</a></li>
-            <li> <a href ="/contact.html">Contact</a></li>
+            <li> <a ui-sref="services">Services</a></li>
+            <li> <a href ="/public/projects.html">Projects</a></li>
+            <li> <a href ="/public/story.htmlry.html">Our Story</a></li>
+            <li> <a href ="/public/contact.html">Contact</a></li>
           </ul>
         </section>
-      </nav> 
+      </nav>
 
-
-      <!-- Slick -->
-     <!--  <div class="single-item">
-        <div><img src="img/home-placeholder-001.jpg"></div>
-        <div><img src="img/home-placeholder-002.jpg"></div>
-        <div><img src="img/home-placeholder-003.jpg"></div>
-      </div> -->
-      
-      <div class="block">
-        <h2 class="headline">Work At a Glimpse</h2>
-        <h4 class="sub-headline">some handpicked projects we've done</h4>
-        <img src="img/briefcase.png">
-      </div>
-
-      <div class="block">
-        <h2 class="headline">Client Testimonial</h2>
-        <h4 class="sub-headline">what clients say about us</h4>
-        <img src="img/dialouge-balloon.png">
-      </div>
-
-      <!-- carousel with some client testimonials -->
-
-
-      <div class="banner">
-        <p>Our promise as a contractor is to build a community value into every project while delivering professional expertise, exceptional customer service and quality construction.</p>
-      </div>
-
-      <div class="block block-contact">
-        <a href="/contact.html">
-          <h2 class="headline">Want to work with us?</h2>
-          <h4 class="sub-headline">let's get started</h4>
-          <img src="img/handshake.png">
-        </a>
-      </div>
+      <!--template injected here-->
+      <div ui-view></div>
 
       <div id="footer-nav">
         <div class="navigation-container show-for-medium-up">
@@ -110,10 +83,14 @@
           </nav>
         </div>
       </div>
-      
-          
+
+
     </div>
     <!-- Javascript -->
+
+    <!--angular main module-->
+    <script type="text/javascript" src="app-js/app.js"></script>
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
